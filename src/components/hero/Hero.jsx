@@ -1,4 +1,4 @@
-import { mirrorEasing, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import "./Hero.scss"
 
 const textVariants = {
@@ -29,11 +29,11 @@ const sliderVariants = {
         x: 0,
     },
     animate: {
-        x: "-220%",
+        x: "-520%",
         transition: {
             repeat: Infinity,
             repeatType: "mirror",
-            duration: 20,
+            duration: 30,
         },
     },
 };
@@ -69,7 +69,7 @@ const Hero = () => {
         variants={sliderVariants}
         initial="initial"
         animate="animate">
-            Developer Ethical Hacker
+            Developer Ethical Hacker Musician
         </motion.div>
 
         <div className="imageContainer">
